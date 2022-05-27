@@ -1,0 +1,156 @@
+! Startup-config last modified at Fri May 27 17:52:53 2022 by admin
+! device: uin1-b2-t1-r2 (cEOSLab, EOS-4.28.0F-26864689.4280F (engineering build))
+!
+no aaa root
+!
+username admin privilege 15 role network-admin secret sha512 $6$mfquGpYg/RUCPw5o$Ie0WFsfLgkiLwqJXz.j5fa3zXvbBofO1Xz8evLz1zVUaSfmz66XvgvC89ctuO0QBG9wN/zG/WcFbTuejNR6EW/
+!
+platform tfa personality arfa
+!
+transceiver qsfp default-mode 4x10G
+!
+service routing protocols model multi-agent
+!
+hostname uin1-b2-t1-r2
+ip host uin1b1t1r1 10.0.0.5 10.1.0.1 10.1.0.21 10.1.0.41 10.1.0.61 10.1.0.81
+ip host uin1b1t1r2 10.0.0.6 10.1.0.25 10.1.0.45 10.1.0.5 10.1.0.65 10.1.0.85
+ip host uin1b1t1r3 10.0.0.7 10.1.0.29 10.1.0.49 10.1.0.69 10.1.0.89 10.1.0.9
+ip host uin1b1t1r4 10.0.0.8 10.1.0.13 10.1.0.33 10.1.0.53 10.1.0.73 10.1.0.93
+ip host uin1b1t2r1 10.0.0.1 10.1.0.10 10.1.0.14 10.1.0.17 10.1.0.2 10.1.0.6
+ip host uin1b1t2r2 10.0.0.2 10.1.0.22 10.1.0.26 10.1.0.30 10.1.0.34 10.1.0.37
+ip host uin1b1t2r3 10.0.0.3 10.1.0.42 10.1.0.46 10.1.0.50 10.1.0.54 10.1.0.57
+ip host uin1b1t2r4 10.0.0.4 10.1.0.62 10.1.0.66 10.1.0.70 10.1.0.74 10.1.0.77
+ip host uin1b2t1r1 10.0.0.13 10.1.0.117 10.1.0.137 10.1.0.157 10.1.0.177 10.1.0.97
+ip host uin1b2t1r3 10.0.0.15 10.1.0.105 10.1.0.125 10.1.0.145 10.1.0.165 10.1.0.185
+ip host uin1b2t1r4 10.0.0.16 10.1.0.109 10.1.0.129 10.1.0.149 10.1.0.169 10.1.0.189
+ip host uin1b2t2r1 10.0.0.9 10.1.0.102 10.1.0.106 10.1.0.110 10.1.0.113 10.1.0.98
+ip host uin1b2t2r2 10.0.0.10 10.1.0.118 10.1.0.122 10.1.0.126 10.1.0.130 10.1.0.133
+ip host uin1b2t2r3 10.0.0.11 10.1.0.138 10.1.0.142 10.1.0.146 10.1.0.150 10.1.0.153
+ip host uin1b2t2r4 10.0.0.12 10.1.0.158 10.1.0.162 10.1.0.166 10.1.0.170 10.1.0.173
+ip host uin1c1t3r1 10.0.0.17 10.1.0.114 10.1.0.18
+ip host uin1c1t3r2 10.0.0.18 10.1.0.134 10.1.0.38
+ip host uin1c1t3r3 10.0.0.19 10.1.0.154 10.1.0.58
+ip host uin1c1t3r4 10.0.0.20 10.1.0.174 10.1.0.78
+ip host uin1core1 10.0.0.69 10.1.0.82 10.1.0.86 10.1.0.90 10.1.0.94
+ip host sea2b2t1r1 10.0.0.25 10.1.0.186 10.1.0.193 10.1.0.209 10.1.0.225 10.1.0.241
+ip host sea2b2t1r2 10.0.0.26 10.1.0.190 10.1.0.197 10.1.0.213 10.1.0.229 10.1.0.245
+ip host sea2b2t1r3 10.0.0.27 10.1.0.201 10.1.0.217 10.1.0.233 10.1.0.249 10.1.1.1
+ip host sea2b2t1r4 10.0.0.28 10.1.0.205 10.1.0.221 10.1.0.237 10.1.0.253 10.1.1.5
+ip host sea2b2t2r1 10.0.0.21 10.1.0.194 10.1.0.198 10.1.0.202 10.1.0.206
+ip host sea2b2t2r2 10.0.0.22 10.1.0.210 10.1.0.214 10.1.0.218 10.1.0.222
+ip host sea2b2t2r3 10.0.0.23 10.1.0.226 10.1.0.230 10.1.0.234 10.1.0.238
+ip host sea2b2t2r4 10.0.0.24 10.1.0.242 10.1.0.246 10.1.0.250 10.1.0.254
+ip host sea1b1t1r1 10.0.0.33 10.1.1.29 10.1.1.49 10.1.1.69 10.1.1.89 10.1.1.9
+ip host sea1b1t1r2 10.0.0.34 10.1.1.13 10.1.1.33 10.1.1.53 10.1.1.73 10.1.1.93
+ip host sea1b1t1r3 10.0.0.35 10.1.1.17 10.1.1.37 10.1.1.57 10.1.1.77 10.1.1.97
+ip host sea1b1t1r4 10.0.0.36 10.1.1.101 10.1.1.21 10.1.1.41 10.1.1.61 10.1.1.81
+ip host sea1b1t2r1 10.0.0.29 10.1.1.10 10.1.1.14 10.1.1.18 10.1.1.22 10.1.1.25
+ip host sea1b1t2r2 10.0.0.30 10.1.1.30 10.1.1.34 10.1.1.38 10.1.1.42 10.1.1.45
+ip host sea1b1t2r3 10.0.0.31 10.1.1.50 10.1.1.54 10.1.1.58 10.1.1.62 10.1.1.65
+ip host sea1b1t2r4 10.0.0.32 10.1.1.70 10.1.1.74 10.1.1.78 10.1.1.82 10.1.1.85
+ip host sea1b2t1r1 10.0.0.41 10.1.0.178 10.1.1.105 10.1.1.125 10.1.1.145 10.1.1.165
+ip host sea1b2t1r2 10.0.0.42 10.1.0.182 10.1.1.109 10.1.1.129 10.1.1.149 10.1.1.169
+ip host sea1b2t1r3 10.0.0.43 10.1.1.113 10.1.1.133 10.1.1.153 10.1.1.173 10.1.1.2
+ip host sea1b2t1r4 10.0.0.44 10.1.1.117 10.1.1.137 10.1.1.157 10.1.1.177 10.1.1.6
+ip host sea1b2t2r1 10.0.0.37 10.1.1.106 10.1.1.110 10.1.1.114 10.1.1.118 10.1.1.121
+ip host sea1b2t2r2 10.0.0.38 10.1.1.126 10.1.1.130 10.1.1.134 10.1.1.138 10.1.1.141
+ip host sea1b2t2r3 10.0.0.39 10.1.1.146 10.1.1.150 10.1.1.154 10.1.1.158 10.1.1.161
+ip host sea1b2t2r4 10.0.0.40 10.1.1.166 10.1.1.170 10.1.1.174 10.1.1.178 10.1.1.181
+ip host sea1c1t3r1 10.0.0.45 10.1.1.122 10.1.1.26
+ip host sea1c1t3r2 10.0.0.46 10.1.1.142 10.1.1.46
+ip host sea1c1t3r3 10.0.0.47 10.1.1.162 10.1.1.66
+ip host sea1c1t3r4 10.0.0.48 10.1.1.182 10.1.1.86
+ip host sfo1b1t1r1 10.0.0.53 10.1.1.185 10.1.1.205 10.1.1.225 10.1.1.245 10.1.2.9
+ip host sfo1b1t1r2 10.0.0.54 10.1.1.189 10.1.1.209 10.1.1.229 10.1.1.249 10.1.2.13
+ip host sfo1b1t1r3 10.0.0.55 10.1.1.193 10.1.1.213 10.1.1.233 10.1.1.253 10.1.2.17
+ip host sfo1b1t1r4 10.0.0.56 10.1.1.197 10.1.1.217 10.1.1.237 10.1.2.1 10.1.2.21
+ip host sfo1b1t2r1 10.0.0.49 10.1.1.186 10.1.1.190 10.1.1.194 10.1.1.198 10.1.1.201
+ip host sfo1b1t2r2 10.0.0.50 10.1.1.206 10.1.1.210 10.1.1.214 10.1.1.218 10.1.1.221
+ip host sfo1b1t2r3 10.0.0.51 10.1.1.226 10.1.1.230 10.1.1.234 10.1.1.238 10.1.1.241
+ip host sfo1b1t2r4 10.0.0.52 10.1.1.246 10.1.1.250 10.1.1.254 10.1.2.2 10.1.2.5
+ip host sfo1b2t1r1 10.0.0.61 10.1.1.90 10.1.2.25 10.1.2.45 10.1.2.65 10.1.2.85
+ip host sfo1b2t1r2 10.0.0.62 10.1.1.94 10.1.2.29 10.1.2.49 10.1.2.69 10.1.2.89
+ip host sfo1b2t1r3 10.0.0.63 10.1.1.98 10.1.2.33 10.1.2.53 10.1.2.73 10.1.2.93
+ip host sfo1b2t1r4 10.0.0.64 10.1.1.102 10.1.2.37 10.1.2.57 10.1.2.77 10.1.2.97
+ip host sfo1b2t2r1 10.0.0.57 10.1.2.26 10.1.2.30 10.1.2.34 10.1.2.38 10.1.2.41
+ip host sfo1b2t2r2 10.0.0.58 10.1.2.46 10.1.2.50 10.1.2.54 10.1.2.58 10.1.2.61
+ip host sfo1b2t2r3 10.0.0.59 10.1.2.66 10.1.2.70 10.1.2.74 10.1.2.78 10.1.2.81
+ip host sfo1b2t2r4 10.0.0.60 10.1.2.101 10.1.2.86 10.1.2.90 10.1.2.94 10.1.2.98
+ip host sfo1c1t3r1 10.0.0.65 10.1.1.202 10.1.2.42
+ip host sfo1c1t3r2 10.0.0.66 10.1.1.222 10.1.2.62
+ip host sfo1c1t3r3 10.0.0.67 10.1.1.242 10.1.2.82
+ip host sfo1c1t3r4 10.0.0.68 10.1.2.102 10.1.2.6
+ip host sfo1core1 10.0.0.70 10.1.2.10 10.1.2.14 10.1.2.18 10.1.2.22
+!
+spanning-tree mode mstp
+!
+management api http-commands
+   no shutdown
+!
+management api gnmi
+   transport grpc default
+!
+management api netconf
+   transport ssh default
+!
+interface Ethernet1
+   description uin1_b2_t1_r2 -> uin1_b2_t2_r1
+   mac-address 52:dc:ca:fe:14:01
+   no switchport
+   ip address 10.1.0.101/30
+   isis enable Gandalf
+   isis network point-to-point
+!
+interface Ethernet2
+   description uin1_b2_t1_r2 -> uin1_b2_t2_r2
+   mac-address 52:dc:ca:fe:14:02
+   no switchport
+   ip address 10.1.0.121/30
+   isis enable Gandalf
+   isis network point-to-point
+!
+interface Ethernet3
+   description uin1_b2_t1_r2 -> uin1_b2_t2_r3
+   mac-address 52:dc:ca:fe:14:03
+   no switchport
+   ip address 10.1.0.141/30
+   isis enable Gandalf
+   isis network point-to-point
+!
+interface Ethernet4
+   description uin1_b2_t1_r2 -> uin1_b2_t2_r4
+   mac-address 52:dc:ca:fe:14:04
+   no switchport
+   ip address 10.1.0.161/30
+   isis enable Gandalf
+   isis network point-to-point
+!
+interface Ethernet5
+   description uin1_b2_t1_r2 -> sea1_b2_t1_r2
+   mac-address 52:dc:ca:fe:14:05
+   no switchport
+   ip address 10.1.0.181/30
+   isis enable Gandalf
+   isis network point-to-point
+!
+interface Loopback0
+   ip address 10.0.0.14/32
+   isis enable Gandalf
+!
+interface Management0
+   ip address 172.20.20.51/24
+   ipv6 address 2001:172:20:20::33/64
+   no lldp transmit
+   no lldp receive
+!
+ip routing
+!
+router isis Gandalf
+   net 49.0001.0000.0000.0014.00
+   is-hostname uin1_b2_t1_r2
+   is-type level-2
+   log-adjacency-changes
+   !
+   address-family ipv4 unicast
+!
+end
