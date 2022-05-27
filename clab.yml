@@ -1,0 +1,818 @@
+name: ftlab
+
+topology:
+  nodes:
+    uin1_b1_t2_r1:
+      kind: ceos
+      image: ceos:4.28.0F
+      env: {'INTFTYPE': 'et'}
+    uin1_b1_t2_r2:
+      kind: ceos
+      image: ceos:4.28.0F
+      env: {'INTFTYPE': 'et'}
+
+    uin1_b1_t2_r3:
+      kind: ceos
+      image: ceos:4.28.0F
+      env: {'INTFTYPE': 'et'}
+
+    uin1_b1_t2_r4:
+      kind: ceos
+      image: ceos:4.28.0F
+      env: {'INTFTYPE': 'et'}
+
+    uin1_b1_t1_r1:
+      kind: ceos
+      image: ceos:4.28.0F
+      env: {'INTFTYPE': 'et'}
+
+    uin1_b1_t1_r2:
+      kind: ceos
+      image: ceos:4.28.0F
+      env: {'INTFTYPE': 'et'}
+
+    uin1_b1_t1_r3:
+      kind: ceos
+      image: ceos:4.28.0F
+      env: {'INTFTYPE': 'et'}
+
+    uin1_b1_t1_r4:
+      kind: ceos
+      image: ceos:4.28.0F
+      env: {'INTFTYPE': 'et'}
+
+    uin1_b2_t2_r1:
+      kind: ceos
+      image: ceos:4.28.0F
+      env: {'INTFTYPE': 'et'}
+
+    uin1_b2_t2_r2:
+      kind: ceos
+      image: ceos:4.28.0F
+      env: {'INTFTYPE': 'et'}
+
+    uin1_b2_t2_r3:
+      kind: ceos
+      image: ceos:4.28.0F
+      env: {'INTFTYPE': 'et'}
+
+    uin1_b2_t2_r4:
+      kind: ceos
+      image: ceos:4.28.0F
+      env: {'INTFTYPE': 'et'}
+
+    uin1_b2_t1_r1:
+      kind: ceos
+      image: ceos:4.28.0F
+      env: {'INTFTYPE': 'et'}
+
+    uin1_b2_t1_r2:
+      kind: ceos
+      image: ceos:4.28.0F
+      env: {'INTFTYPE': 'et'}
+
+    uin1_b2_t1_r3:
+      kind: ceos
+      image: ceos:4.28.0F
+      env: {'INTFTYPE': 'et'}
+
+    uin1_b2_t1_r4:
+      kind: ceos
+      image: ceos:4.28.0F
+      env: {'INTFTYPE': 'et'}
+
+    uin1_c1_t3_r1:
+      kind: ceos
+      image: ceos:4.28.0F
+      env: {'INTFTYPE': 'et'}
+
+    uin1_c1_t3_r2:
+      kind: ceos
+      image: ceos:4.28.0F
+      env: {'INTFTYPE': 'et'}
+
+    uin1_c1_t3_r3:
+      kind: ceos
+      image: ceos:4.28.0F
+      env: {'INTFTYPE': 'et'}
+
+    uin1_c1_t3_r4:
+      kind: ceos
+      image: ceos:4.28.0F
+      env: {'INTFTYPE': 'et'}
+
+    sea2_b2_t2_r1:
+      kind: ceos
+      image: ceos:4.28.0F
+      env: {'INTFTYPE': 'et'}
+
+    sea2_b2_t2_r2:
+      kind: ceos
+      image: ceos:4.28.0F
+      env: {'INTFTYPE': 'et'}
+
+    sea2_b2_t2_r3:
+      kind: ceos
+      image: ceos:4.28.0F
+      env: {'INTFTYPE': 'et'}
+
+    sea2_b2_t2_r4:
+      kind: ceos
+      image: ceos:4.28.0F
+      env: {'INTFTYPE': 'et'}
+
+    sea2_b2_t1_r1:
+      kind: ceos
+      image: ceos:4.28.0F
+      env: {'INTFTYPE': 'et'}
+
+    sea2_b2_t1_r2:
+      kind: ceos
+      image: ceos:4.28.0F
+      env: {'INTFTYPE': 'et'}
+
+    sea2_b2_t1_r3:
+      kind: ceos
+      image: ceos:4.28.0F
+      env: {'INTFTYPE': 'et'}
+
+    sea2_b2_t1_r4:
+      kind: ceos
+      image: ceos:4.28.0F
+      env: {'INTFTYPE': 'et'}
+
+    sea1_b1_t2_r1:
+      kind: ceos
+      image: ceos:4.28.0F
+      env: {'INTFTYPE': 'et'}
+
+    sea1_b1_t2_r2:
+      kind: ceos
+      image: ceos:4.28.0F
+      env: {'INTFTYPE': 'et'}
+
+    sea1_b1_t2_r3:
+      kind: ceos
+      image: ceos:4.28.0F
+      env: {'INTFTYPE': 'et'}
+
+    sea1_b1_t2_r4:
+      kind: ceos
+      image: ceos:4.28.0F
+      env: {'INTFTYPE': 'et'}
+
+    sea1_b1_t1_r1:
+      kind: ceos
+      image: ceos:4.28.0F
+      env: {'INTFTYPE': 'et'}
+
+    sea1_b1_t1_r2:
+      kind: ceos
+      image: ceos:4.28.0F
+      env: {'INTFTYPE': 'et'}
+
+    sea1_b1_t1_r3:
+      kind: ceos
+      image: ceos:4.28.0F
+      env: {'INTFTYPE': 'et'}
+
+    sea1_b1_t1_r4:
+      kind: ceos
+      image: ceos:4.28.0F
+      env: {'INTFTYPE': 'et'}
+
+    sea1_b2_t2_r1:
+      kind: ceos
+      image: ceos:4.28.0F
+      env: {'INTFTYPE': 'et'}
+
+    sea1_b2_t2_r2:
+      kind: ceos
+      image: ceos:4.28.0F
+      env: {'INTFTYPE': 'et'}
+
+    sea1_b2_t2_r3:
+      kind: ceos
+      image: ceos:4.28.0F
+      env: {'INTFTYPE': 'et'}
+
+    sea1_b2_t2_r4:
+      kind: ceos
+      image: ceos:4.28.0F
+      env: {'INTFTYPE': 'et'}
+
+    sea1_b2_t1_r1:
+      kind: ceos
+      image: ceos:4.28.0F
+      env: {'INTFTYPE': 'et'}
+
+    sea1_b2_t1_r2:
+      kind: ceos
+      image: ceos:4.28.0F
+      env: {'INTFTYPE': 'et'}
+
+    sea1_b2_t1_r3:
+      kind: ceos
+      image: ceos:4.28.0F
+      env: {'INTFTYPE': 'et'}
+
+    sea1_b2_t1_r4:
+      kind: ceos
+      image: ceos:4.28.0F
+      env: {'INTFTYPE': 'et'}
+
+    sea1_c1_t3_r1:
+      kind: ceos
+      image: ceos:4.28.0F
+      env: {'INTFTYPE': 'et'}
+
+    sea1_c1_t3_r2:
+      kind: ceos
+      image: ceos:4.28.0F
+      env: {'INTFTYPE': 'et'}
+
+    sea1_c1_t3_r3:
+      kind: ceos
+      image: ceos:4.28.0F
+      env: {'INTFTYPE': 'et'}
+
+    sea1_c1_t3_r4:
+      kind: ceos
+      image: ceos:4.28.0F
+      env: {'INTFTYPE': 'et'}
+
+    sfo1_b1_t2_r1:
+      kind: ceos
+      image: ceos:4.28.0F
+      env: {'INTFTYPE': 'et'}
+
+    sfo1_b1_t2_r2:
+      kind: ceos
+      image: ceos:4.28.0F
+      env: {'INTFTYPE': 'et'}
+
+    sfo1_b1_t2_r3:
+      kind: ceos
+      image: ceos:4.28.0F
+      env: {'INTFTYPE': 'et'}
+
+    sfo1_b1_t2_r4:
+      kind: ceos
+      image: ceos:4.28.0F
+      env: {'INTFTYPE': 'et'}
+
+    sfo1_b1_t1_r1:
+      kind: ceos
+      image: ceos:4.28.0F
+      env: {'INTFTYPE': 'et'}
+
+    sfo1_b1_t1_r2:
+      kind: ceos
+      image: ceos:4.28.0F
+      env: {'INTFTYPE': 'et'}
+
+    sfo1_b1_t1_r3:
+      kind: ceos
+      image: ceos:4.28.0F
+      env: {'INTFTYPE': 'et'}
+
+    sfo1_b1_t1_r4:
+      kind: ceos
+      image: ceos:4.28.0F
+      env: {'INTFTYPE': 'et'}
+
+    sfo1_b2_t2_r1:
+      kind: ceos
+      image: ceos:4.28.0F
+      env: {'INTFTYPE': 'et'}
+
+    sfo1_b2_t2_r2:
+      kind: ceos
+      image: ceos:4.28.0F
+      env: {'INTFTYPE': 'et'}
+
+    sfo1_b2_t2_r3:
+      kind: ceos
+      image: ceos:4.28.0F
+      env: {'INTFTYPE': 'et'}
+
+    sfo1_b2_t2_r4:
+      kind: ceos
+      image: ceos:4.28.0F
+      env: {'INTFTYPE': 'et'}
+
+    sfo1_b2_t1_r1:
+      kind: ceos
+      image: ceos:4.28.0F
+      env: {'INTFTYPE': 'et'}
+
+    sfo1_b2_t1_r2:
+      kind: ceos
+      image: ceos:4.28.0F
+      env: {'INTFTYPE': 'et'}
+
+    sfo1_b2_t1_r3:
+      kind: ceos
+      image: ceos:4.28.0F
+      env: {'INTFTYPE': 'et'}
+
+    sfo1_b2_t1_r4:
+      kind: ceos
+      image: ceos:4.28.0F
+      env: {'INTFTYPE': 'et'}
+
+    sfo1_c1_t3_r1:
+      kind: ceos
+      image: ceos:4.28.0F
+      env: {'INTFTYPE': 'et'}
+
+    sfo1_c1_t3_r2:
+      kind: ceos
+      image: ceos:4.28.0F
+      env: {'INTFTYPE': 'et'}
+
+    sfo1_c1_t3_r3:
+      kind: ceos
+      image: ceos:4.28.0F
+      env: {'INTFTYPE': 'et'}
+
+    sfo1_c1_t3_r4:
+      kind: ceos
+      image: ceos:4.28.0F
+      env: {'INTFTYPE': 'et'}
+
+    uin1_core1:
+      kind: ceos
+      image: ceos:4.28.0F
+      env: {'INTFTYPE': 'et'}
+
+    sfo1_core1:
+      kind: ceos
+      image: ceos:4.28.0F
+      env: {'INTFTYPE': 'et'}
+
+
+
+  links:
+  - endpoints:
+    - "uin1_b1_t2_r1:et1"
+    - "uin1_b1_t1_r1:et1"
+  - endpoints:
+    - "uin1_b1_t2_r1:et2"
+    - "uin1_b1_t1_r2:et1"
+  - endpoints:
+    - "uin1_b1_t2_r1:et3"
+    - "uin1_b1_t1_r3:et1"
+  - endpoints:
+    - "uin1_b1_t2_r1:et4"
+    - "uin1_b1_t1_r4:et1"
+  - endpoints:
+    - "uin1_b1_t2_r1:et5"
+    - "uin1_c1_t3_r1:et1"
+  - endpoints:
+    - "uin1_b1_t2_r2:et1"
+    - "uin1_b1_t1_r1:et2"
+  - endpoints:
+    - "uin1_b1_t2_r2:et2"
+    - "uin1_b1_t1_r2:et2"
+  - endpoints:
+    - "uin1_b1_t2_r2:et3"
+    - "uin1_b1_t1_r3:et2"
+  - endpoints:
+    - "uin1_b1_t2_r2:et4"
+    - "uin1_b1_t1_r4:et2"
+  - endpoints:
+    - "uin1_b1_t2_r2:et5"
+    - "uin1_c1_t3_r2:et1"
+  - endpoints:
+    - "uin1_b1_t2_r3:et1"
+    - "uin1_b1_t1_r1:et3"
+  - endpoints:
+    - "uin1_b1_t2_r3:et2"
+    - "uin1_b1_t1_r2:et3"
+  - endpoints:
+    - "uin1_b1_t2_r3:et3"
+    - "uin1_b1_t1_r3:et3"
+  - endpoints:
+    - "uin1_b1_t2_r3:et4"
+    - "uin1_b1_t1_r4:et3"
+  - endpoints:
+    - "uin1_b1_t2_r3:et5"
+    - "uin1_c1_t3_r3:et1"
+  - endpoints:
+    - "uin1_b1_t2_r4:et1"
+    - "uin1_b1_t1_r1:et4"
+  - endpoints:
+    - "uin1_b1_t2_r4:et2"
+    - "uin1_b1_t1_r2:et4"
+  - endpoints:
+    - "uin1_b1_t2_r4:et3"
+    - "uin1_b1_t1_r3:et4"
+  - endpoints:
+    - "uin1_b1_t2_r4:et4"
+    - "uin1_b1_t1_r4:et4"
+  - endpoints:
+    - "uin1_b1_t2_r4:et5"
+    - "uin1_c1_t3_r4:et1"
+  - endpoints:
+    - "uin1_b1_t1_r1:et5"
+    - "uin1_core1:et1"
+  - endpoints:
+    - "uin1_b1_t1_r2:et5"
+    - "uin1_core1:et2"
+  - endpoints:
+    - "uin1_b1_t1_r3:et5"
+    - "uin1_core1:et3"
+  - endpoints:
+    - "uin1_b1_t1_r4:et5"
+    - "uin1_core1:et4"
+  - endpoints:
+    - "uin1_b2_t2_r1:et1"
+    - "uin1_b2_t1_r1:et1"
+  - endpoints:
+    - "uin1_b2_t2_r1:et2"
+    - "uin1_b2_t1_r2:et1"
+  - endpoints:
+    - "uin1_b2_t2_r1:et3"
+    - "uin1_b2_t1_r3:et1"
+  - endpoints:
+    - "uin1_b2_t2_r1:et4"
+    - "uin1_b2_t1_r4:et1"
+  - endpoints:
+    - "uin1_b2_t2_r1:et5"
+    - "uin1_c1_t3_r1:et2"
+  - endpoints:
+    - "uin1_b2_t2_r2:et1"
+    - "uin1_b2_t1_r1:et2"
+  - endpoints:
+    - "uin1_b2_t2_r2:et2"
+    - "uin1_b2_t1_r2:et2"
+  - endpoints:
+    - "uin1_b2_t2_r2:et3"
+    - "uin1_b2_t1_r3:et2"
+  - endpoints:
+    - "uin1_b2_t2_r2:et4"
+    - "uin1_b2_t1_r4:et2"
+  - endpoints:
+    - "uin1_b2_t2_r2:et5"
+    - "uin1_c1_t3_r2:et2"
+  - endpoints:
+    - "uin1_b2_t2_r3:et1"
+    - "uin1_b2_t1_r1:et3"
+  - endpoints:
+    - "uin1_b2_t2_r3:et2"
+    - "uin1_b2_t1_r2:et3"
+  - endpoints:
+    - "uin1_b2_t2_r3:et3"
+    - "uin1_b2_t1_r3:et3"
+  - endpoints:
+    - "uin1_b2_t2_r3:et4"
+    - "uin1_b2_t1_r4:et3"
+  - endpoints:
+    - "uin1_b2_t2_r3:et5"
+    - "uin1_c1_t3_r3:et2"
+  - endpoints:
+    - "uin1_b2_t2_r4:et1"
+    - "uin1_b2_t1_r1:et4"
+  - endpoints:
+    - "uin1_b2_t2_r4:et2"
+    - "uin1_b2_t1_r2:et4"
+  - endpoints:
+    - "uin1_b2_t2_r4:et3"
+    - "uin1_b2_t1_r3:et4"
+  - endpoints:
+    - "uin1_b2_t2_r4:et4"
+    - "uin1_b2_t1_r4:et4"
+  - endpoints:
+    - "uin1_b2_t2_r4:et5"
+    - "uin1_c1_t3_r4:et2"
+  - endpoints:
+    - "uin1_b2_t1_r1:et5"
+    - "sea1_b2_t1_r1:et1"
+  - endpoints:
+    - "uin1_b2_t1_r2:et5"
+    - "sea1_b2_t1_r2:et1"
+  - endpoints:
+    - "uin1_b2_t1_r3:et5"
+    - "sea2_b2_t1_r1:et1"
+  - endpoints:
+    - "uin1_b2_t1_r4:et5"
+    - "sea2_b2_t1_r2:et1"
+  - endpoints:
+    - "sea2_b2_t2_r1:et1"
+    - "sea2_b2_t1_r1:et2"
+  - endpoints:
+    - "sea2_b2_t2_r1:et2"
+    - "sea2_b2_t1_r2:et2"
+  - endpoints:
+    - "sea2_b2_t2_r1:et3"
+    - "sea2_b2_t1_r3:et1"
+  - endpoints:
+    - "sea2_b2_t2_r1:et4"
+    - "sea2_b2_t1_r4:et1"
+  - endpoints:
+    - "sea2_b2_t2_r2:et1"
+    - "sea2_b2_t1_r1:et3"
+  - endpoints:
+    - "sea2_b2_t2_r2:et2"
+    - "sea2_b2_t1_r2:et3"
+  - endpoints:
+    - "sea2_b2_t2_r2:et3"
+    - "sea2_b2_t1_r3:et2"
+  - endpoints:
+    - "sea2_b2_t2_r2:et4"
+    - "sea2_b2_t1_r4:et2"
+  - endpoints:
+    - "sea2_b2_t2_r3:et1"
+    - "sea2_b2_t1_r1:et4"
+  - endpoints:
+    - "sea2_b2_t2_r3:et2"
+    - "sea2_b2_t1_r2:et4"
+  - endpoints:
+    - "sea2_b2_t2_r3:et3"
+    - "sea2_b2_t1_r3:et3"
+  - endpoints:
+    - "sea2_b2_t2_r3:et4"
+    - "sea2_b2_t1_r4:et3"
+  - endpoints:
+    - "sea2_b2_t2_r4:et1"
+    - "sea2_b2_t1_r1:et5"
+  - endpoints:
+    - "sea2_b2_t2_r4:et2"
+    - "sea2_b2_t1_r2:et5"
+  - endpoints:
+    - "sea2_b2_t2_r4:et3"
+    - "sea2_b2_t1_r3:et4"
+  - endpoints:
+    - "sea2_b2_t2_r4:et4"
+    - "sea2_b2_t1_r4:et4"
+  - endpoints:
+    - "sea2_b2_t1_r3:et5"
+    - "sea1_b2_t1_r3:et1"
+  - endpoints:
+    - "sea2_b2_t1_r4:et5"
+    - "sea1_b2_t1_r4:et1"
+  - endpoints:
+    - "sea1_b1_t2_r1:et1"
+    - "sea1_b1_t1_r1:et1"
+  - endpoints:
+    - "sea1_b1_t2_r1:et2"
+    - "sea1_b1_t1_r2:et1"
+  - endpoints:
+    - "sea1_b1_t2_r1:et3"
+    - "sea1_b1_t1_r3:et1"
+  - endpoints:
+    - "sea1_b1_t2_r1:et4"
+    - "sea1_b1_t1_r4:et1"
+  - endpoints:
+    - "sea1_b1_t2_r1:et5"
+    - "sea1_c1_t3_r1:et1"
+  - endpoints:
+    - "sea1_b1_t2_r2:et1"
+    - "sea1_b1_t1_r1:et2"
+  - endpoints:
+    - "sea1_b1_t2_r2:et2"
+    - "sea1_b1_t1_r2:et2"
+  - endpoints:
+    - "sea1_b1_t2_r2:et3"
+    - "sea1_b1_t1_r3:et2"
+  - endpoints:
+    - "sea1_b1_t2_r2:et4"
+    - "sea1_b1_t1_r4:et2"
+  - endpoints:
+    - "sea1_b1_t2_r2:et5"
+    - "sea1_c1_t3_r2:et1"
+  - endpoints:
+    - "sea1_b1_t2_r3:et1"
+    - "sea1_b1_t1_r1:et3"
+  - endpoints:
+    - "sea1_b1_t2_r3:et2"
+    - "sea1_b1_t1_r2:et3"
+  - endpoints:
+    - "sea1_b1_t2_r3:et3"
+    - "sea1_b1_t1_r3:et3"
+  - endpoints:
+    - "sea1_b1_t2_r3:et4"
+    - "sea1_b1_t1_r4:et3"
+  - endpoints:
+    - "sea1_b1_t2_r3:et5"
+    - "sea1_c1_t3_r3:et1"
+  - endpoints:
+    - "sea1_b1_t2_r4:et1"
+    - "sea1_b1_t1_r1:et4"
+  - endpoints:
+    - "sea1_b1_t2_r4:et2"
+    - "sea1_b1_t1_r2:et4"
+  - endpoints:
+    - "sea1_b1_t2_r4:et3"
+    - "sea1_b1_t1_r3:et4"
+  - endpoints:
+    - "sea1_b1_t2_r4:et4"
+    - "sea1_b1_t1_r4:et4"
+  - endpoints:
+    - "sea1_b1_t2_r4:et5"
+    - "sea1_c1_t3_r4:et1"
+  - endpoints:
+    - "sea1_b1_t1_r1:et5"
+    - "sfo1_b2_t1_r1:et1"
+  - endpoints:
+    - "sea1_b1_t1_r2:et5"
+    - "sfo1_b2_t1_r2:et1"
+  - endpoints:
+    - "sea1_b1_t1_r3:et5"
+    - "sfo1_b2_t1_r3:et1"
+  - endpoints:
+    - "sea1_b1_t1_r4:et5"
+    - "sfo1_b2_t1_r4:et1"
+  - endpoints:
+    - "sea1_b2_t2_r1:et1"
+    - "sea1_b2_t1_r1:et2"
+  - endpoints:
+    - "sea1_b2_t2_r1:et2"
+    - "sea1_b2_t1_r2:et2"
+  - endpoints:
+    - "sea1_b2_t2_r1:et3"
+    - "sea1_b2_t1_r3:et2"
+  - endpoints:
+    - "sea1_b2_t2_r1:et4"
+    - "sea1_b2_t1_r4:et2"
+  - endpoints:
+    - "sea1_b2_t2_r1:et5"
+    - "sea1_c1_t3_r1:et2"
+  - endpoints:
+    - "sea1_b2_t2_r2:et1"
+    - "sea1_b2_t1_r1:et3"
+  - endpoints:
+    - "sea1_b2_t2_r2:et2"
+    - "sea1_b2_t1_r2:et3"
+  - endpoints:
+    - "sea1_b2_t2_r2:et3"
+    - "sea1_b2_t1_r3:et3"
+  - endpoints:
+    - "sea1_b2_t2_r2:et4"
+    - "sea1_b2_t1_r4:et3"
+  - endpoints:
+    - "sea1_b2_t2_r2:et5"
+    - "sea1_c1_t3_r2:et2"
+  - endpoints:
+    - "sea1_b2_t2_r3:et1"
+    - "sea1_b2_t1_r1:et4"
+  - endpoints:
+    - "sea1_b2_t2_r3:et2"
+    - "sea1_b2_t1_r2:et4"
+  - endpoints:
+    - "sea1_b2_t2_r3:et3"
+    - "sea1_b2_t1_r3:et4"
+  - endpoints:
+    - "sea1_b2_t2_r3:et4"
+    - "sea1_b2_t1_r4:et4"
+  - endpoints:
+    - "sea1_b2_t2_r3:et5"
+    - "sea1_c1_t3_r3:et2"
+  - endpoints:
+    - "sea1_b2_t2_r4:et1"
+    - "sea1_b2_t1_r1:et5"
+  - endpoints:
+    - "sea1_b2_t2_r4:et2"
+    - "sea1_b2_t1_r2:et5"
+  - endpoints:
+    - "sea1_b2_t2_r4:et3"
+    - "sea1_b2_t1_r3:et5"
+  - endpoints:
+    - "sea1_b2_t2_r4:et4"
+    - "sea1_b2_t1_r4:et5"
+  - endpoints:
+    - "sea1_b2_t2_r4:et5"
+    - "sea1_c1_t3_r4:et2"
+  - endpoints:
+    - "sfo1_b1_t2_r1:et1"
+    - "sfo1_b1_t1_r1:et1"
+  - endpoints:
+    - "sfo1_b1_t2_r1:et2"
+    - "sfo1_b1_t1_r2:et1"
+  - endpoints:
+    - "sfo1_b1_t2_r1:et3"
+    - "sfo1_b1_t1_r3:et1"
+  - endpoints:
+    - "sfo1_b1_t2_r1:et4"
+    - "sfo1_b1_t1_r4:et1"
+  - endpoints:
+    - "sfo1_b1_t2_r1:et5"
+    - "sfo1_c1_t3_r1:et1"
+  - endpoints:
+    - "sfo1_b1_t2_r2:et1"
+    - "sfo1_b1_t1_r1:et2"
+  - endpoints:
+    - "sfo1_b1_t2_r2:et2"
+    - "sfo1_b1_t1_r2:et2"
+  - endpoints:
+    - "sfo1_b1_t2_r2:et3"
+    - "sfo1_b1_t1_r3:et2"
+  - endpoints:
+    - "sfo1_b1_t2_r2:et4"
+    - "sfo1_b1_t1_r4:et2"
+  - endpoints:
+    - "sfo1_b1_t2_r2:et5"
+    - "sfo1_c1_t3_r2:et1"
+  - endpoints:
+    - "sfo1_b1_t2_r3:et1"
+    - "sfo1_b1_t1_r1:et3"
+  - endpoints:
+    - "sfo1_b1_t2_r3:et2"
+    - "sfo1_b1_t1_r2:et3"
+  - endpoints:
+    - "sfo1_b1_t2_r3:et3"
+    - "sfo1_b1_t1_r3:et3"
+  - endpoints:
+    - "sfo1_b1_t2_r3:et4"
+    - "sfo1_b1_t1_r4:et3"
+  - endpoints:
+    - "sfo1_b1_t2_r3:et5"
+    - "sfo1_c1_t3_r3:et1"
+  - endpoints:
+    - "sfo1_b1_t2_r4:et1"
+    - "sfo1_b1_t1_r1:et4"
+  - endpoints:
+    - "sfo1_b1_t2_r4:et2"
+    - "sfo1_b1_t1_r2:et4"
+  - endpoints:
+    - "sfo1_b1_t2_r4:et3"
+    - "sfo1_b1_t1_r3:et4"
+  - endpoints:
+    - "sfo1_b1_t2_r4:et4"
+    - "sfo1_b1_t1_r4:et4"
+  - endpoints:
+    - "sfo1_b1_t2_r4:et5"
+    - "sfo1_c1_t3_r4:et1"
+  - endpoints:
+    - "sfo1_b1_t1_r1:et5"
+    - "sfo1_core1:et1"
+  - endpoints:
+    - "sfo1_b1_t1_r2:et5"
+    - "sfo1_core1:et2"
+  - endpoints:
+    - "sfo1_b1_t1_r3:et5"
+    - "sfo1_core1:et3"
+  - endpoints:
+    - "sfo1_b1_t1_r4:et5"
+    - "sfo1_core1:et4"
+  - endpoints:
+    - "sfo1_b2_t2_r1:et1"
+    - "sfo1_b2_t1_r1:et2"
+  - endpoints:
+    - "sfo1_b2_t2_r1:et2"
+    - "sfo1_b2_t1_r2:et2"
+  - endpoints:
+    - "sfo1_b2_t2_r1:et3"
+    - "sfo1_b2_t1_r3:et2"
+  - endpoints:
+    - "sfo1_b2_t2_r1:et4"
+    - "sfo1_b2_t1_r4:et2"
+  - endpoints:
+    - "sfo1_b2_t2_r1:et5"
+    - "sfo1_c1_t3_r1:et2"
+  - endpoints:
+    - "sfo1_b2_t2_r2:et1"
+    - "sfo1_b2_t1_r1:et3"
+  - endpoints:
+    - "sfo1_b2_t2_r2:et2"
+    - "sfo1_b2_t1_r2:et3"
+  - endpoints:
+    - "sfo1_b2_t2_r2:et3"
+    - "sfo1_b2_t1_r3:et3"
+  - endpoints:
+    - "sfo1_b2_t2_r2:et4"
+    - "sfo1_b2_t1_r4:et3"
+  - endpoints:
+    - "sfo1_b2_t2_r2:et5"
+    - "sfo1_c1_t3_r2:et2"
+  - endpoints:
+    - "sfo1_b2_t2_r3:et1"
+    - "sfo1_b2_t1_r1:et4"
+  - endpoints:
+    - "sfo1_b2_t2_r3:et2"
+    - "sfo1_b2_t1_r2:et4"
+  - endpoints:
+    - "sfo1_b2_t2_r3:et3"
+    - "sfo1_b2_t1_r3:et4"
+  - endpoints:
+    - "sfo1_b2_t2_r3:et4"
+    - "sfo1_b2_t1_r4:et4"
+  - endpoints:
+    - "sfo1_b2_t2_r3:et5"
+    - "sfo1_c1_t3_r3:et2"
+  - endpoints:
+    - "sfo1_b2_t2_r4:et1"
+    - "sfo1_b2_t1_r1:et5"
+  - endpoints:
+    - "sfo1_b2_t2_r4:et2"
+    - "sfo1_b2_t1_r2:et5"
+  - endpoints:
+    - "sfo1_b2_t2_r4:et3"
+    - "sfo1_b2_t1_r3:et5"
+  - endpoints:
+    - "sfo1_b2_t2_r4:et4"
+    - "sfo1_b2_t1_r4:et5"
+  - endpoints:
+    - "sfo1_b2_t2_r4:et5"
+    - "sfo1_c1_t3_r4:et2"
